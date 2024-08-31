@@ -1,0 +1,36 @@
+//Write a Java program to solve quadratic equations (use if, else if and else).
+
+ import java.util.Scanner;
+ public class eqadratic{
+     
+     public static void main(String[] agrs){
+         
+         Scanner input= new Scanner(System.in);
+         
+         
+         System.out.println("Input A");
+         double a = input.nextDouble();
+         
+          System.out.println("Input B");
+         double b = input.nextDouble();
+         
+          System.out.println("Input C");
+         double c = input.nextDouble();
+    
+         
+         double result= b*b-4*a*c;
+         
+         if (result> 0.0 ){
+             double r1= (-b+ Math.pow(result,0.5))/( 2*a);
+             double r2= (-b- Math.pow(result,0.5))/( 2*a);
+             
+             System.out.println("The root are " + r1 +"and " + r2);
+             
+         }
+         
+         
+         
+         
+         
+     }
+ }
